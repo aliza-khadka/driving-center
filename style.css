@@ -1,0 +1,720 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+   overflow-x: hidden;
+    background: white;
+
+}
+.topmost{
+    height:80px;
+    margin-left:0px;
+    background:#fEE227;
+}
+
+.navigation{
+    position: absolute;
+    width:60px;
+    height:600px;
+    background:#FFC30B;
+    transition:0.5s;
+    overflow: hidden;
+  
+}
+.navigation:hover,
+.navigation.active{
+    width:300px;
+
+}
+.navigation ul{
+    position:absolute;
+    top: 80px;
+    left: 0;
+    width:100%;
+}
+.navigation ul li{
+    position: relative;
+    width:100%;
+    list-style:none;
+}
+.navigation ul li:hover{
+    background:#FC6600;
+}
+.navigation ul li a{
+    position:relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon{
+    position:relative;
+    display:block;
+    min-width:60px;
+    height: 60px;
+    line-height:60px;
+    text-align:start;
+ 
+}
+.navigation ul li a .icon .fa{
+    font-size:24px;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding:0 10px;
+    height: 60px;
+    line-height:60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+.toggle{
+    position: absolute;
+    top:0;
+    right:0;
+    width:60px;
+    height:60px;
+    background:GOLD;
+    cursor:pointer;
+}
+
+.toggle.active{
+    background:#C29200;
+}
+.toggle:before{
+    
+   content: "\f0c9";
+   font-family: "FontAwesome";
+   
+    position:absolute;
+    width:100%;
+    height:100%;
+    line-height:60px;
+    text-align:center;
+    font-size:24px;
+    color:#fff;
+}
+.toggle.active:before{
+    content: '\f00d';
+    font-family: "FontAwesome";
+}
+
+
+#header{
+    display: flex;
+    justify-content: start;
+    overflow-x: hidden;
+    
+}
+.picContainer {
+    position: relative;
+    width: 650px;
+    height: 400px;
+    border: 5px solid white;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px gold;
+    margin-top: 50px;
+    margin-left:80px;
+}
+  
+ .picContainer .img {
+   width: 640px;
+   height: 400px;
+    position: absolute;
+    z-index: 0;
+    transition: 1s;
+    margin-top: 0px;
+}
+.banner-img img{
+    width: 640px;
+    height: 400px;
+}
+.right {
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    z-index: 99;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s;
+    right:0;
+    top:0;
+}
+.right:hover{
+    background: rgba(0, 0, 0, 0.25)
+}
+.right:before{
+
+    font-weight: 900;
+    content: "\f105";
+    font-family: "FontAwesome";
+    font-size: 50px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(0.75);
+    margin-right: 10px;
+    transition: .5s;
+}
+.right:hover:before{
+     transform: translateY(-50%) scale(1);
+}
+.left {
+    position: relative;
+    height: 100%;
+    width: 60px;
+    z-index: 99;
+    cursor: pointer;
+    color: #fff;
+    transition: 1s;
+}
+.left:hover{
+    background: rgba(0, 0, 0, 0.25)
+}
+.left:before{
+    
+    font-weight: 900;
+    content: "\f104";
+    font-family: "FontAwesome";
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scale(0.75);
+    margin-left: 10px;
+    transition: .5s;
+}
+.left:hover:before{
+     transform: translateY(-50%) scale(1);
+}
+
+
+.dot{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 5px #fff;
+}
+.dot.a1{margin-left:-30px}
+.dot.a2{margin-left:-10px}
+.dot.a3{margin-left:10px}
+.dot.a4{margin-left:30px}
+.dot.a1:hover{background:#fff}
+.dot.a2:hover{background:#fff}
+.dot.a3:hover{background:#fff}
+.dot.a4:hover{background:#fff}
+
+
+.heading{
+    width:30%;
+    height:550px;
+    margin-left:100px;
+    content:justify;
+    margin-top:50px;
+
+}
+.heading h2{
+    font-family: sans-serif;
+    font-size:50px;
+    font-weight: 400;
+    color:#330748;
+    padding:10px;
+}
+.heading h3{
+    font-family: sans-serif;
+    font-size:30px;
+    font-weight: 200;
+    color:rgb(189, 91, 11);
+    padding:10px;
+    
+}
+.heading p{
+    font-family:sans-serif;
+    font-size:18px;
+    padding:5px;
+}
+
+/*--------------------topic for book now starts---------*/
+.topic{
+    text-align: center;
+    background:gold;
+    font-size:40px;
+    height: 200px;
+    margin-top:0px;
+    width: 100%;
+    margin-right: 0;
+  
+}
+.topic h3{
+    font-size:50px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    font-weight: 600px;
+    color:#fff;
+}
+
+.topic h2{
+    font-size:35px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-weight: 600px;
+    color:#fff;
+}
+.topic h2:hover{
+color:blue;
+}
+@media (max-width:1220px){
+    .banner-img .picContainer{
+        width:500px;
+        height: 400px;
+    }
+    .banner-img .picContainer img{
+        width:500px;
+        height: 400px;
+    }
+    .heading img{
+        width:auto;
+    }
+}
+    @media (max-width:1020px){
+        .banner-img .picContainer{
+            width:400px;
+        height: 350px;
+         
+        }
+        .banner-img .picContainer img{
+            width:400px;
+            height: 350px;
+        }
+        .heading img{
+            margin-top: 90px;
+            width:auto;
+        }
+    }
+
+@media (max-width:870px){
+    .banner-img{
+        display: none;
+    }
+    .heading{
+        text-align:center;
+        width:100%;
+    }
+}
+    @media (max-width:500px)
+    {
+
+    .heading img{
+        margin-top: 10px;
+    }
+}
+/*-------------------------------------topic for book now ends----------------------------------------------------------------------------*/
+/*-------------------------------------------Animation part starts-----------------------------------------------------------------------*/
+.animation-area{
+    background:linear-gradient(to left, yellow, gold);
+    width: 100%;
+
+}
+.box-area{
+    position: absolute;
+   
+    width: 100%;
+    height:100px;
+    
+}
+.box-area li{
+    position:absolute;
+    display:block;
+    list-style: none;
+    width:25px;
+    height:25px;
+    background:rgba(96, 252, 24, 0.2);
+    animation:animate 20s linear infinite;
+    z-index:2;
+    margin-top:0px;
+    bottom: 0px;
+}
+.box-area li:nth-child(1){
+    left:86%;
+    width:80px;
+    height:80px;
+    animation-delay:0s;
+
+} 
+.box-area li:nth-child(2){
+    left:12%;
+    width:30px;
+    height:30px;
+    animation-delay:0s;
+
+} 
+.box-area li:nth-child(3){
+    left:70%;
+    width:100px;
+    height:60px;
+    animation-delay:5.5s;
+} 
+.box-area li:nth-child(4){
+    left:42%;
+    width:150px;
+    height:50px;
+    animation-delay:0s;
+    animation-duration: 15s;
+} 
+
+.box-area li:nth-child(5){
+    left:65%;
+    width:40px;
+    height:40px;
+    animation-delay:0s;
+   
+} 
+.box-area li:nth-child(6){
+    left:15%;
+    width:90px;
+    height:40px;
+    animation-delay:3.5s;
+   
+} 
+@keyframes animate{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(-800px) rotate(360deg);
+        opacity: 1;
+    }
+}
+/*----------------------------------------------------------------  booking form  starts-----------------------------------------------------*/
+.booking{
+        font-family:sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        background:#2c2c2cef;
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding: 30px;
+  }
+  
+  .wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #fec107;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .wrapper .forms{
+    width: 100%;
+  }
+  
+  .wrapper .forms .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper .forms .inputfield label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .wrapper .forms .inputfield .input,
+  .wrapper .forms .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper .forms .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+  
+  .wrapper .forms .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper .forms .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .wrapper .forms .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  .wrapper .forms .inputfield .input:focus,
+  .wrapper .forms .inputfield .textarea:focus,
+  .wrapper .forms .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }
+  
+  .wrapper .forms .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  .wrapper .forms .inputfield .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .wrapper .forms .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .wrapper .forms .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+  }
+  .wrapper .forms .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+  }
+  .wrapper .forms .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #fec107;
+  }
+  
+  .wrapper .forms .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+  
+  .wrapper .forms .inputfield .btn{
+    width: 100%;
+     padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:  #fec107;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .wrapper .forms .inputfield .btn:hover{
+    background: #ffd658;
+  }
+  
+  .wrapper .forms .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  @media (max-width:420px) {
+    .wrapper .forms .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper .forms .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper .forms .inputfield.terms{
+      flex-direction: row;
+    }
+  }
+  
+/*------------------------------------------------- booking now ends------------------------------------------------------------*/
+.card-topic{
+    text-align:center;
+}
+.card-topic h2{
+    font-size: 50px;
+    color: gold;
+    cursor:pointer;
+    transition:0.6s ease-in-out;
+}
+.card-topic h5{
+    font-size: 30px;
+    color: gold;
+    transition: width 3s;
+  transition-delay: 1s;
+}
+.card-topic h2:hover, h5:hover{
+    color:saddlebrown;
+    
+}
+.card-title{
+    font-size: 30px; 
+    color:gold; 
+    font-weight: 600px; 
+ transition: 2s;
+ 
+    text-align: center;
+    cursor: pointer;
+}
+.card-title:hover{
+    color:skyblue;
+}
+.card-text{
+    font-size: 18px; 
+    color:saddlebrown; 
+    font-weight: 600px; 
+   
+    text-align: start;
+    cursor: pointer;
+}
+
+/*-----------------------------------------------------Footer section starts----------------------------------------------------------*/
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "open Sans";
+    padding-top:50px ;
+    color: #fff;
+    margin-bottom: 0px;
+    position:absolute;
+  }
+  
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width:500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+  }
+  .socials a{
+    text-decoration:none;
+    color: #fff;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+    margin: 1rem;
+  }
+  .socials a:hover i{
+    color: aqua;
+  }
+  .footer-bottom{
+    background:#000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+  }
+  .footer-bottom p{
+    font-size:14px;
+    word-spacing:2px;
+    text-transform: capitalize;
+  }
+
+  #button  {
+    display: inline-block;
+    background-color:yellow;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }

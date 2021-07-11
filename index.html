@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <meta name="viewport" content="width-device-width, initial-scale=1.0">
+     <title>Motor driving  school</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+          <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+ 
+<script src="app.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ </head>  
+ <body>
+     <div class="navigation">
+         <ul>
+             <li>
+                 <a href="#">
+                     <span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span>
+                     <span class="title">Home</span>
+                 </a>
+             </li>
+             <li>
+                <a href="#booking">
+                    <span class="icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                    <span class="title">appointment</span>
+                </a>
+            </li>
+            <li>
+                <a href="#timing">
+                    <span class="icon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                    <span class="title">schedule</span>
+                </a>
+            </li>
+            <li>
+                <a href="#home">
+                    <span class="icon"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                    <span class="title">about</span>
+                </a>
+            </li>
+            <li>
+                <a href="#footer">
+                    <span class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                    <span class="title">contact</span>
+                </a>
+            </li>
+         </ul>
+     </div>
+     <div class="topmost">
+     <div class="toggle" onclick="toggleMenu()"></div>
+</div>
+
+    <section id="header">
+        <div class="heading">
+            <h2 ><b>Welcome !!!</b></h2>
+           <!--<h3>Driving school</h3>-->
+           <p>Motor Driving Training Center Pvt Ltd has been premium training center over the years. Our classes have been very fruitful to students,
+               managers, new car owners alike. We keep all our vehicles in top conditions. Besides teaching the basics of driving and riding; 
+               we also have theory classes, exam preparation, and help in license registrations (online) and purchase of your own car.<br>We look forward to teach you.
+               
+           </p>
+               
+            <img src="" style="width:100%; height: auto; ">
+         
+        </div>
+        <div class="banner-img">
+            <div class="picContainer">
+                
+                <div id="image1" class="img">
+                    <img src="images/BM4.jpg" />
+                </div>
+                <div id="image2" class="img">
+                    <img src="images/BM1.JPG" />
+                </div>
+                <div id="image3" class="img">
+                    <img src="images/BM2.jpg" />
+                </div>
+                <div id="image4" class="img">
+                    <img src="images/BM3.jpg" />
+                </div>
+                <div class="left" onclick="left()"></div>
+                <div class="right" onclick="right()"></div>
+                <div class="dots">
+                    <div class="dot a1"></div>
+                    <div class="dot a2"></div>
+                    <div class="dot a3"></div>
+                    <div class="dot a4"></div>
+                </div>
+            </div>
+              </div>
+       
+    </section>
+
+<div class="topic">
+    <h3><b>What are you waiting for?</b></h3>
+    <h2><b><u>Book now</u></b></h2>
+
+<!-- Back to top button -->
+<a id="button"></a>
+<div class="animation-area">
+    <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</div>
+
+<section class="booking" id="booking">
+    
+<div class="wrapper">
+    
+    <div class="title">
+      Registration Form
+    </div>
+    <div class="container register">
+        <div class="row">
+            
+            <form method="POST" autocomplete="off" name="google-sheet">
+    <div class="forms">
+      
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" name="Fname" class="input" required>
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" name="Lname" class="input" required>
+       </div>  
+       
+      
+        <div class="inputfield">
+          <label>Category</label>
+          <div class="custom_select"   required>
+            <select name="Category">
+              <option value="">Select</option>
+              <option value="2-Wheelers" >2-Wheelers</option>
+              <option value="4-Wheelers">4-Wheelers</option>
+              <option value="corporate Booking">corporate Booking</option>
+              <option value="Theory Class">Theory Class</option>
+              <option value="Exam-Prep">Exam-Prep</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input type="text" name="Email" class="input" required>
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="number" name="Phone" class="input" required>
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea class="textarea" name="Address" required></textarea>
+       </div> 
+      
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+      <div class="inputfield">
+        <button type="submit" value="submit" class="btn">submit</button>
+      </div>
+    </form>
+    </div>
+     
+    
+</div>
+</div>
+
+
+</div>
+</section>
+
+
+<div class="topic">
+ 
+</div>
+<section class="timing" id="timing"> 
+    <img src="images/Timing.jpg" style="width: 100%; height:500px;">
+</section>
+
+
+<div class="card-topic" id="card-topic" style="height: 150px; width:100%;">
+    <h2>FAQS</h2>
+    <h5>most frequently asked questions???
+    </h5>
+</div>
+
+<div class="card-deck" style="margin-bottom: 50px;">
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title"><b>VEHICLE CONDITION?</b></h5><hr>
+        <p class="card-text">All vehicles are regularly maintain and sure students learn technically and emotionally</p>
+      </div>
+      
+    </div>
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title"><b>PRICING?</b></h5><hr>
+        <p class="card-text">Get in touch with with our office.Our price package are customize as per your needs and requirements as well determined by ongoing seasonal offers.</p>
+      </div>
+    
+    </div>
+    <div class="card">
+      
+      <div class="card-body">
+        <h5 class="card-title"><b>Discount Category</b></h5><hr>
+        <p class="card-text">-&ensp; Group discount<br>-&ensp;corporate Discount<br>-&ensp; Student Discount</p>
+      </div>
+      
+    </div>
+  </div>
+  
+                <footer id="footer">
+                    <div class="footer-content">
+                      <h3>Get In Touch</h3>
+                      <p><i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;kathmandu<br> <i class="fa fa-phone" aria-hidden="true"></i>&ensp; 01-62145676, 98510567900<br><i class="fa fa-envelope" aria-hidden="true"></i>&ensp;motordriving@gmail.com</p>
+                      <ul class="socials">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                          
+                              <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                      </ul>
+                      <div class="footer-bottom">
+                        <p>copyright &copy;2020 companyName</p>
+                    </div>
+                  
+                  </footer>
+    
+            </form><!--form-->
+    </section>
+    
+     <script type="text/javascript">
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbzLQnvnc4hQevjMNkQQ2lwmFjco4xECoosG8cB9dzVp2XmSHm5OdgYfUg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+     function toggleMenu(){
+         let navigation= document.querySelector('.navigation');
+         let toggle= document.querySelector('.toggle');
+         navigation.classList.toggle('active');
+        toggle.classList.toggle('active');
+
+
+     }
+     let i = 0;
+
+let box1 = document.getElementById("image1");
+let box2 = document.getElementById("image2");
+let box3 = document.getElementById("image3");
+let box4 = document.getElementById("image4");
+let a1 = document.querySelector(".a1");
+let a2 = document.querySelector(".a2");
+let a3 = document.querySelector(".a3");
+let a4 = document.querySelector(".a4");
+let info = document.getElementById("info");
+
+a1.onclick = function () {
+    box1.style.opacity = 1;
+    box2.style.opacity = 0;
+    box3.style.opacity = 0;
+    box4.style.opacity = 0;
+    info.innerHTML = "Image 1"
+    i = 0;
+}
+
+a2.onclick = function () {
+    box1.style.opacity = 0;
+    box2.style.opacity = 1;
+    box3.style.opacity = 0;
+    box4.style.opacity = 0;
+    info.innerHTML = "Image 2"
+    i = 1;
+}
+
+a3.onclick = function () {
+    box1.style.opacity = 0;
+    box2.style.opacity = 0;
+    box3.style.opacity = 1;
+    box4.style.opacity = 0;
+    info.innerHTML = "Image 3"
+    i = 2;
+}
+
+a4.onclick = function () {
+    box1.style.opacity = 0;
+    box2.style.opacity = 0;
+    box3.style.opacity = 0;
+    box4.style.opacity = 1;
+    info.innerHTML = "Image 4"
+    i = 3;
+}
+
+document.addEventListener("keydown", (e) => {
+    if (e.keyCode == 37) {
+        right();
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.keyCode == 39 ) {
+        right();
+    }
+});
+
+function right() {
+    if (i == 0) {
+        box1.style.opacity = 1;
+        box2.style.opacity = 0;
+        box3.style.opacity = 0;
+        box4.style.opacity = 0;
+        info.innerHTML = "Image 1"
+        i++
+    }
+    else if (i == 1) {
+        box1.style.opacity = 0;
+        box2.style.opacity = 1;
+        box3.style.opacity = 0;
+        box4.style.opacity = 0;
+        info.innerHTML = "Image 2"
+        i++
+    }
+    else if (i == 2) {  
+        box1.style.opacity = 0;
+        box2.style.opacity = 0;
+        box3.style.opacity = 1;
+        box4.style.opacity = 0;
+        info.innerHTML = "Image 3"
+        i++
+    }
+    else if (i == 3) {
+        box1.style.opacity = 0;
+        box2.style.opacity = 0;
+        box3.style.opacity = 0;
+        box4.style.opacity = 1;
+        info.innerHTML = "Image 4"
+        i = 0;
+    }
+}
+
+function left() {
+    if (i == 0) {
+        box1.style.opacity = 0;
+        box2.style.opacity = 0;
+        box3.style.opacity = 0;
+        box4.style.opacity = 1;
+        info.innerHTML = "Image 1"
+        i++
+    }
+    else if (i == 1) {
+        box1.style.opacity = 0;
+        box2.style.opacity = 0;
+        box3.style.opacity = 1;
+        box4.style.opacity = 0;
+        info.innerHTML = "Image 2"
+        i++
+    }
+    else if (i == 2) {
+        box1.style.opacity = 0;
+        box2.style.opacity = 1;
+        box3.style.opacity = 0;
+        box4.style.opacity = 0;
+        info.innerHTML = "Image 3"
+        i++
+    }
+    else if (i == 3) {
+        box1.style.opacity = 1;
+        box2.style.opacity = 0;
+        box3.style.opacity = 0;
+        box4.style.opacity = 0;
+        info.innerHTML = "Image 4"
+        i = 0;
+    }
+
+}
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+ 
+</body> 
+
+
+</html>
